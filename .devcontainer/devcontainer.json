@@ -1,0 +1,11 @@
+{
+  "name": "Rails + PostgreSQL",
+  "image": "mcr.microsoft.com/devcontainers/ruby:3.2",
+  "features": {
+    "ghcr.io/devcontainers/features/postgresql:1": {
+      "version": "16"
+    }
+  },
+  "forwardPorts": [3000],
+  "postCreateCommand": "sudo service postgresql start"
+}
